@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrivuar Dance Studio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container header__inner">
+        <div class="header__logo">
+            <img src="media/logo.jpg" alt="Arrivuar logo">
+            <span>Arrivuar Dance Studio</span>
+        </div>
+        <nav class="header__nav">
+            <a href="#about">О студии</a>
+            <a href="#directions">Направления</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        <a href="#contacts" class="header__cta">Записаться</a>
+        <div class="header__burger" id="burger">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav">
+            <a href="#about">О студии</a>
+            <a href="#directions">Направления</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="hero" id="hero">
+        <video class="hero__video" autoplay muted loop playsinline>
+            <source src="media/hero_wide.mp4" type="video/mp4" media="(min-width: 768px)">
+            <source src="media/hero.mp4" type="video/mp4" media="(max-width: 767px)">
+        </video>
+        <div class="hero__overlay"></div>
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span>Arrivuar</span> Dance Studio
+                </h1>
+                <p class="hero__subtitle">
+                    Танцуй, чувствуй, вдохновляйся. Студия, где каждый может найти свой ритм.
+                </p>
+                <a href="#contacts" class="hero__btn">Записаться на пробное занятие</a>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container about__inner">
+            <div class="about__image">
+                <img src="media/logo.jpg" alt="Arrivuar Dance Studio">
+            </div>
+            <div class="about__content">
+                <h2 class="about__title">Мы создаём танец, чтобы жить им.</h2>
+                <p class="about__text">
+                    Мы — студия, где танец становится способом самовыражения.
+                    Здесь каждый может раскрыть себя через движение и почувствовать музыку телом.
+                </p>
+                <p class="about__text">
+                    У нас занимаются дети, подростки и взрослые. Мы верим, что танец — это энергия, которая объединяет и
+                    вдохновляет.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="directions" id="directions">
+        <div class="container">
+            <h2 class="directions__title">Наши направления</h2>
+            <div class="directions__grid">
+                <div class="direction-card no-image">
+                    <div class="direction-card__content">
+                        <h3>👶 Детская группа (3+)</h3>
+                        <p>Развиваем ритм, координацию и уверенность с ранних лет.</p>
+                    </div>
+                </div>
+                <div class="direction-card no-image">
+                    <div class="direction-card__content">
+                        <h3>👧 Подростковая группа (12+)</h3>
+                        <p>Основы хореографии, работа в команде и самовыражение.</p>
+                    </div>
+                </div>
+                <div class="direction-card no-image">
+                    <div class="direction-card__content">
+                        <h3>👩 Женский хип-хоп (18+)</h3>
+                        <p>Энергия, уверенность и стиль — танец как способ самовыражения.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="gallery__title">Атмосфера студии</h2>
+            <div class="gallery__grid">
+                <div class="gallery__item">
+                    <img src="media/gallery/1.jpg" alt="Занятие в Arrivuar Dance Studio">
+                </div>
+                <div class="gallery__item">
+                    <img src="media/gallery/2.jpg" alt="Занятие в Arrivuar Dance Studio">
+                </div>
+                <div class="gallery__item">
+                    <img src="media/gallery/3.jpg" alt="Занятие в Arrivuar Dance Studio">
+                </div>
+                <div class="gallery__item">
+                    <img src="media/gallery/4.jpg" alt="Занятие в Arrivuar Dance Studio">
+                </div>
+                <div class="gallery__item">
+                    <img src="media/gallery/5.jpg" alt="Занятие в Arrivuar Dance Studio">
+                </div>
+                <div class="gallery__item">
+                    <img src="media/gallery/6.jpg" alt="Занятие в Arrivuar Dance Studio">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts" id="contacts">
+        <div class="container contacts__inner">
+            <h2 class="contacts__title">Связаться с нами</h2>
+            <p class="contacts__subtitle">
+                Присоединяйтесь к Arrivuar Dance Studio — мы всегда на связи 💃
+            </p>
+            <div class="contacts__cards">
+                <a href="tel:+79258590681" class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h3>Телефон</h3>
+                        <p>+7 (925) 859-06-81</p>
+                    </div>
+                </a>
+                <a href="https://t.me/arrivuardancestudio" target="_blank" class="contact-card">
+                    <i class="fa-brands fa-telegram"></i>
+                    <div>
+                        <h3>Telegram</h3>
+                        <p>@arrivuardancestudio</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container footer__inner">
+        <div class="footer__brand">
+            <img src="media/logo.jpg" alt="Arrivuar Dance Studio logo">
+            <span>Arrivuar Dance Studio</span>
+        </div>
+        <p class="footer__copy">
+            © 2025 Arrivuar Dance Studio. Все права защищены.
+        </p>
+    </div>
+</footer>
+<script src="scripts/animations.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
