@@ -1,119 +1,131 @@
 .contacts {
-    background: radial-gradient(80% 120% at 50% 0%, rgba(139, 92, 246, 0.25), transparent 80%),
+  background:
+    radial-gradient(
+      80% 120% at 50% 0%,
+      rgba(139, 92, 246, 0.25),
+      transparent 80%
+    ),
     linear-gradient(180deg, #0b0b0c 0%, #151515 100%);
-    padding: clamp(80px, 10vw, 160px) 0;
-    text-align: center;
-    color: var(--color-light);
-    position: relative;
-    overflow: hidden;
+  padding: clamp(80px, 10vw, 160px) 0;
+  text-align: center;
+  color: var(--color-light);
+  position: relative;
+  overflow: hidden;
 }
 
 .contacts__title {
-    font-size: var(--font-size-h2);
-    margin-bottom: 12px;
+  font-size: var(--font-size-h2);
+  margin-bottom: 12px;
 }
 
 .contacts__subtitle {
-    font-size: 18px;
-    color: var(--color-muted);
-    margin-bottom: 60px;
+  font-size: 18px;
+  color: var(--color-muted);
+  margin-bottom: 60px;
 }
 
 .contacts__cards {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .contact-card {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: var(--radius);
-    padding: 24px 32px;
-    text-decoration: none;
-    color: var(--color-light);
-    box-shadow: var(--shadow);
-    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 24px 32px;
+  text-decoration: none;
+  color: var(--color-light);
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    background 0.3s;
 }
 
 .contact-card:hover {
-    background: linear-gradient(90deg, rgba(139, 92, 246, 0.25), rgba(236, 72, 153, 0.25));
-    transform: translateY(-6px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+    90deg,
+    rgba(139, 92, 246, 0.25),
+    rgba(236, 72, 153, 0.25)
+  );
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .contact-card i {
-    font-size: 32px;
-    color: #b28cff;
+  font-size: 32px;
+  color: #b28cff;
 }
 
 .contact-card h3 {
-    font-size: 18px;
-    font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .contact-card p {
-    color: var(--color-muted);
+  color: var(--color-muted);
 }
 
 .contacts__address {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    font-size: 18px;
-    color: var(--color-muted);
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  color: var(--color-muted);
+  margin-bottom: 40px;
 }
 
 .contacts__address i {
-    color: var(--color-accent);
-    font-size: 22px;
+  color: var(--color-accent);
+  font-size: 22px;
 }
 
 .contacts__map {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    height: 400px;
-    margin: 0 auto;
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .contacts__map iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    filter: grayscale(40%) contrast(1.1);
-    transition: filter 0.4s ease;
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: grayscale(40%) contrast(1.1);
+  transition: filter 0.4s ease;
 }
 
 .contacts__map:hover iframe {
-    filter: grayscale(0%) contrast(1);
+  filter: grayscale(0%) contrast(1);
 }
 
 @media (max-width: 768px) {
-    .contacts__cards {
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-    }
+  .contacts__cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
 
-    .contact-card {
-        width: 100%;
-        max-width: 320px;
-        justify-content: center;
-    }
+  .contact-card {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
 
-    .contacts__map {
-        height: 300px;
-    }
+  .contacts__map {
+    height: 300px;
+  }
 }

@@ -1,31 +1,31 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--font-main);
-    font-size: var(--font-size-base);
-    background-color: var(--color-bg);
-    color: var(--color-light);
-    line-height: 1.5;
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  background-color: var(--color-bg);
+  color: var(--color-light);
+  line-height: 1.5;
 }
 
 .container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 section {
-    padding: clamp(60px, 10vw, 120px) 0;
+  padding: clamp(60px, 10vw, 120px) 0;
 }
 
 .lock-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }
